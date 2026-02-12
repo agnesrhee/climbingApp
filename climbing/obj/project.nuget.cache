@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "fLMcota0oIw=",
+  "dgSpecHash": "5oTwhDTsER4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Agnes Rhee\\source\\repos\\climbingApp\\climbing\\climbing.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
-    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\microsoft.openapi\\2.4.1\\microsoft.openapi.2.4.1.nupkg.sha512",
+    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.1.2\\swashbuckle.aspnetcore.swagger.10.1.2.nupkg.sha512",
+    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.1.2\\swashbuckle.aspnetcore.swaggergen.10.1.2.nupkg.sha512",
+    "C:\\Users\\Agnes Rhee\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.1.2\\swashbuckle.aspnetcore.swaggerui.10.1.2.nupkg.sha512"
   ],
   "logs": []
 }
