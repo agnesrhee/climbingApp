@@ -1,0 +1,6 @@
+@climbing_HostAddress = http://localhost:5222
+
+GET {{climbing_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
