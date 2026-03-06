@@ -7,11 +7,8 @@
         public string LastName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string PasswordHash { get; set; } = string.Empty;
-        public string Role { get; set; } = "Guest";
+        public string Role { get; set; } = "Member";
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool IsActive { get; set; } = true;
-
-        public MembershipTier? Membership { get; set; }
-        public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
     }
 }
