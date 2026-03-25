@@ -52,13 +52,14 @@ namespace climbing.Controllers
             var response = new ClassDto
             {
                 Id = newClass.Id,
+                Name = newClass.Name,
                 Description = newClass.Description,
                 Instructor = newClass.Instructor,
                 StartTime = newClass.StartTime,
                 EndTime = newClass.EndTime,
                 Capacity = newClass.Capacity,
                 Price = newClass.Price,
-                IsActive = newClass.IsActive 
+                IsActive = newClass.IsActive
 
             };
 
@@ -84,5 +85,35 @@ namespace climbing.Controllers
             await _context.SaveChangesAsync();
             return Ok(existingClass);
         }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<ActionResult> DeleteClass(int id)
+        {
+            var existingClass = await _context.Classes.FindAsync(id);
+            if (existingClass == null)
+            {
+                return NotFound();
+            }
+
+            _context.Classes.Remove(existingClass);
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
+
+        [HttpPost]
+        [Route("{id}")]
+        public async Task<ActionResult> ToggleClassActive(int id)
+        {
+            var existingClass = await _context.Classes.FindAsync(id);
+            if (existingClass == null)
+            {
+                return NotFound();
+            }
+            existingClass.IsActive = !existingClass.IsActive;
+            await _context.SaveChangesAsync();
+            return Ok(existingClass);
+
+        }
     }
-}
+    }
