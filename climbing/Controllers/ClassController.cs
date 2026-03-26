@@ -37,7 +37,7 @@ namespace climbing.Controllers
             {
                 Name = dto.Name,
                 Description = dto.Description,
-                Instructor = dto.Instructor,
+                InstructorId = dto.InstructorId,
                 StartTime = dto.StartTime,
                 EndTime = dto.EndTime,
                 Capacity = dto.Capacity,
@@ -54,7 +54,7 @@ namespace climbing.Controllers
                 Id = newClass.Id,
                 Name = newClass.Name,
                 Description = newClass.Description,
-                Instructor = newClass.Instructor,
+                InstructorId = newClass.InstructorId,
                 StartTime = newClass.StartTime,
                 EndTime = newClass.EndTime,
                 Capacity = newClass.Capacity,
@@ -76,7 +76,7 @@ namespace climbing.Controllers
             }
             existingClass.Name = dto.Name;
             existingClass.Description = dto.Description;
-            existingClass.Instructor = dto.Instructor;
+            existingClass.InstructorId = dto.InstructorId;
             existingClass.StartTime = dto.StartTime;
             existingClass.EndTime = dto.EndTime;
             existingClass.Capacity = dto.Capacity;
